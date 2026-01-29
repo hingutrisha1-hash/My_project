@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator">
+    <div class="screen">
+      <div id="history" class="history"></div>
+      <div id="display" class="display">0</div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn function" data-action="clear">AC</button>
+      <button class="btn function" data-action="delete">DEL</button>
+      <button class="btn function" data-action="toggle-sign">±</button>
+      <button class="btn operator" data-action="/">÷</button>
+
+      <button class="btn" data-digit="7">7</button>
+      <button class="btn" data-digit="8">8</button>
+      <button class="btn" data-digit="9">9</button>
+      <button class="btn operator" data-action="*">×</button>
+
+      <button class="btn" data-digit="4">4</button>
+      <button class="btn" data-digit="5">5</button>
+      <button class="btn" data-digit="6">6</button>
+      <button class="btn operator" data-action="-">−</button>
+
+      <button class="btn" data-digit="1">1</button>
+      <button class="btn" data-digit="2">2</button>
+      <button class="btn" data-digit="3">3</button>
+      <button class="btn operator" data-action="+">+</button>
+
+      <button class="btn wide" data-digit="0">0</button>
+      <button class="btn" data-digit=".">.</button>
+      <button class="btn equals" data-action="=">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
